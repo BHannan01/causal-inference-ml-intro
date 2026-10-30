@@ -1,51 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/404.html</loc>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/1-the-question-and-the-data.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/CODE_OF_CONDUCT.html</loc>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/2-how-dml-works.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/LICENSE.html</loc>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/3-dml-in-five-steps.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/citation.html</loc>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/4-four-learners.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/index.html</loc>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/404.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/404.html</loc>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/5-checks-and-your-own-question.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/CODE_OF_CONDUCT.html</loc>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/LICENSE.html</loc>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/citation.html</loc>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/aio.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/index.html</loc>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/citation.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/introduction.html</loc>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/images.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/profiles.html</loc>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/index.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/reference.html</loc>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/instructor/1-the-question-and-the-data.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/introduction.html</loc>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/instructor/2-how-dml-works.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/profiles.html</loc>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/instructor/3-dml-in-five-steps.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/reference.html</loc>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/instructor/4-four-learners.html</loc>
+  </url>
+  <url>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/instructor/404.html</loc>
+  </url>
+  <url>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/instructor/5-checks-and-your-own-question.html</loc>
+  </url>
+  <url>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/instructor/CODE_OF_CONDUCT.html</loc>
+  </url>
+  <url>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/instructor/LICENSE.html</loc>
+  </url>
+  <url>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/instructor/aio.html</loc>
+  </url>
+  <url>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/instructor/citation.html</loc>
+  </url>
+  <url>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/instructor/images.html</loc>
+  </url>
+  <url>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/instructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/instructor/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/instructor/key-points.html</loc>
+  </url>
+  <url>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/instructor/profiles.html</loc>
+  </url>
+  <url>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/instructor/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/key-points.html</loc>
+  </url>
+  <url>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/profiles.html</loc>
+  </url>
+  <url>
+    <loc>https://BHannan01.github.io/causal-inference-ml-intro/reference.html</loc>
   </url>
 </urlset>
