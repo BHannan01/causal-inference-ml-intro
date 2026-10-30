@@ -1,0 +1,14 @@
+# Python packages for "Introduction to Causal Inference with Machine Learning" (Python 3.12 or later).
+# Install into a virtual environment with:   python -m pip install -r requirements.txt
+# Versions are pinned to those that produced the numbers in the lesson and the masterclass slides (October 2026).
+# The same list is written out in learners/setup.md (step 3), so learners need no download; keep the two in step.
+doubleml==0.11.4
+scikit-learn==1.9.1
+xgboost==3.4.1
+numpy==2.5.4
+pandas==3.1.0
+scipy==1.18.1
+matplotlib==3.11.2
+seaborn==0.13.2
+statsmodels==0.15.0
+jupyterlab==4.6.4

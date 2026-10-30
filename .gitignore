@@ -49,3 +49,10 @@ docs/
 # translation temp files
 po/*~
 
+
+# test runner output
+tests/output/
+_preview-site/
+
+# earlier versions of the lesson, kept locally only
+archive/

@@ -75,7 +75,7 @@ We share values of inclusivity and a passion for sharing knowledge, teaching and
 You can also [reach us by email][contact].
 
 [ai-policy]: https://docs.carpentries.org/policies/genai-policy.html
-[contact]: mailto:team@carpentries.org
+[contact]: mailto:brody.hannan@soton.ac.uk
 [cp-site]: https://carpentries.org/
 [dc-issues]: https://github.com/issues?q=user%3Adatacarpentry
 [dc-lessons]: https://datacarpentry.org/lessons/

@@ -1,84 +1,49 @@
-# The Carpentries Workbench Template Markdown Lesson
+# Introduction to Causal Inference with Machine Learning
 
-This lesson is a template lesson that uses [The Carpentries Workbench][workbench]. 
+A Carpentries Workbench lesson that follows on from the QMEG (Quantitative Methods in Education Group) masterclass at the University of Southampton, 13 January 2027 (Microsoft Teams). It works through DoubleML's 401(k) example ([Impact of 401(k) on Financial Wealth](https://docs.doubleml.org/stable/examples/py_double_ml_pension.html)) in Python, continuing Part 4 of the masterclass slides. Code that appears on the slides appears in the lesson unchanged.
 
-## Note about lesson life cycle stage
-Although the `config.yaml` states the life cycle stage as pre-alpha, **the template is stable and ready to use**. The life cycle stage is preset to `"pre-alpha"` as this setting is appropriate for new lessons initialised using the template.
+Status: pre-alpha, not yet published.
 
-## Create a new repository from this template
+## Contents
 
-To use this template to start a new lesson repository, 
-make sure you're logged into Github.   
-Visit https://github.com/carpentries/workbench-template-md/generate
-and follow the instructions.
-Checking the 'Include all branches' option will save some time waiting for the first website build
-when your new repository is initialised.
+- `episodes/`: five episodes (Markdown), figures in `episodes/fig/`, and an offline copy of the data in `episodes/data/`
+- `learners/`: setup instructions and the reference page (glossary, references)
+- `instructors/`: instructor notes (how the lesson fits the masterclass, timings, common errors)
+- `requirements.txt`: the pinned Python packages
+- `tests/run_episodes.py`: runs every code block in the episodes and checks every DoubleML estimate against the locked numbers
+- `tests/check_deck_code.py`: checks that the code on the slides appears unchanged in the lesson and the workshop notebooks
+- `tests/check_self_contained.py`: checks that a learner can follow the lesson from what is in it (no outside references, broken links or install gaps)
+- `archive/`: earlier versions, kept locally and excluded from git
 
-If you have any questions, contact [@tobyhodges](https://github.com/tobyhodges)
+## Preview locally
 
-## Configure a new lesson
+Install R, pandoc and the Workbench packages (`sandpaper`, `varnish`, `pegboard` from https://carpentries.r-universe.dev). Copy this folder outside Google Drive, make it a git repository (`git init && git add -A && git commit -m start`), then in R from that folder:
 
-Follow the steps below to
-complete the initial configuration of a new lesson repository built from this template:
+```r
+sandpaper::build_lesson()
+```
 
-1. **Make sure GitHub Pages is activated:**
-   navigate to _Settings_,
-   select _Pages_ from the left sidebar,
-   and make sure that `gh-pages` is selected as the branch to build from.
-   If no `gh-pages` branch is available, check the _Actions_ tab to see if the first
-   website build workflows are still running.
-   If they're not running yet, you may need to manually enable them via the _Actions_ tab.
-   The branch should become available when those have completed.
-1. **Adjust the `config.yaml` file:**
-   this file contains global parameters for your lesson site.
-   Individual fields within the file are documented with comments (beginning with `#`)
-   At minimum, you should adjust all the fields marked 'FIXME':
-   - `title`
-   - `created`
-   - `keywords`
-   - `life_cycle` (the default, _pre-alpha_, is the appropriate for brand new lessons)
-   - `contact`
-1. **Annotate the repository** with site URL and topic tags:
-   navigate back to the repository landing page and
-   click on the gear wheel/cog icon (similar to ⚙️) 
-   at the top-right of the _About_ box.
-   Check the "Use your GitHub Pages website" option,
-   and [add some keywords and other annotations to describe your lesson](https://cdh.carpentries.org/the-carpentries-incubator.html#topic-tags)
-   in the _Topics_ field.
-   At minimum, these should include:
-   - `lesson`
-   - the life cycle of the lesson (e.g. `pre-alpha`)
-   - the human language the lesson is written in (e.g. `deutsch`)
-1. **Adjust the 
-   `CITATION.cff`, `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, and `LICENSE.md` files**
-   as appropriate for your project.
-   -  `CITATION.cff`:
-      this file contains information that people can use to cite your lesson,
-      for example if they publish their own work based on it.
-      You should [update the CFF][cff-sandpaper-docs] now to include information about your lesson,
-      and remember to return to it periodically, keeping it updated as your
-      author list grows and other details become available or need to change.
-      The [Citation File Format home page][cff-home] gives more information about the format,
-      and the [`cffinit` webtool][cffinit] can be used to create new and update existing CFF files.
-   -  `CODE_OF_CONDUCT.md`: 
-      if you are using this template for a project outside The Carpentries,
-      you should adjust this file to describe 
-      who should be contacted with Code of Conduct reports,
-      and how those reports will be handled.
-   -  `CONTRIBUTING.md`:
-      depending on the current state and maturity of your project,
-      the contents of the template Contributing Guide may not be appropriate.
-      You should adjust the file to help guide contributors on how best
-      to get involved and make an impact on your lesson.
-   -  `LICENSE.md`:
-      in line with the terms of the CC-BY license,
-      you should ensure that the copyright information 
-      provided in the license file is accurate for your project.
-1. **Update this README with 
-   [relevant information about your lesson](https://carpentries.github.io/lesson-development-training/collaborating-newcomers.html#readme)**
-   and delete this section.
+## Check the code
 
-[cff-home]: https://citation-file-format.github.io/
-[cff-sandpaper-docs]:  https://carpentries.github.io/sandpaper-docs/editing.html#making-your-lesson-citable
-[cffinit]: https://citation-file-format.github.io/cff-initializer-javascript/
-[workbench]: https://carpentries.github.io/sandpaper-docs/
+With Python 3.12 or later:
+
+```bash
+python -m venv causal-ml-env
+source causal-ml-env/bin/activate        # Windows: causal-ml-env\Scripts\activate
+python -m pip install -r requirements.txt
+python tests/run_episodes.py             # about 3 minutes; needs internet for fetch_401K
+python tests/check_deck_code.py          # after any change to the slides
+python tests/check_self_contained.py     # after any change to the text
+```
+
+The masterclass deck leads: when it changes, update the lesson and the workshop notebook to match, then run all three. `check_self_contained.py` fails on anything a learner could not do from the lesson alone: a reference to joining instructions, an email or a link "in the chat", leftovers such as FIXME or breakout rooms, a link to a missing file, an episode that uses DoubleML without installing it first, or a Setup page whose package versions differ from `requirements.txt`. It fails on the `FIXME` in `config.yaml` until the lesson has a GitHub repository.
+
+On macOS, XGBoost needs the OpenMP library (`brew install libomp`).
+
+## Licence
+
+Instructional material: CC BY 4.0. Code: MIT. See `LICENSE.md`. Data sources and licences: `episodes/data/README.md`.
+
+## Contact
+
+Brody Hannan, Southampton Education School, University of Southampton (brody.hannan@soton.ac.uk).
